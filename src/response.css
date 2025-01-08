@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "hekaya";
+  src: url("./styles/fonts/hekaya.ttf");
+}
+.hint,
+.answer {
+  display: none;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 525px;
+  position: fixed;
+  padding: 20px 10px 20px 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2em;
+  background-color: #efefef;
+}
+
+.hint_header {
+  color: #c22735;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.hint p {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.btns {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width: 45%;
+  margin: 0 10px;
+  padding: 13px 0;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  font-size: 22px;
+  background-color: #c22735;
+}
+.hint_btn {
+  background-color: #414141;
+}
+
+.res_container img {
+  width: 100%;
+}
+
+.one_right {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #c22735;
+  font-weight: bold;
+}
+
+.right p {
+  color: #414141;
+}
+.right > p:nth-of-type(1) {
+  font-size: 27px;
+  font-weight: bold;
+}
+.right > p:nth-of-type(2) {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #00d5aa;
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.images > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 48%;
+}
+.social_right {
+  width: 50%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.social_right a {
+  width: 20%;
+}
+.images p {
+  margin: 5px 0 15px 0;
+}
+.res_container p {
+  font-size: 20px;
+}
+.last {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.wrong_container {
+  transform: rotate(-2deg);
+  margin-bottom: 3em;
+}
+.wrong_container p {
+  font-family: "hekaya";
+  font-size: 2em;
+
+  color: black;
+}
+.wrong_container p:last-of-type {
+  color: #c22735;
+  transform: rotate(-1deg);
+}
+
+.wrong_container P:first-of-type {
+  color: #c22735;
+  line-height: 0.8;
+}
+@media (max-width: 600px) {
+  .btns {
+    width: 90%;
+    margin: 6px 0;
+    padding: 10px 0;
+    font-size: 4vw;
+  }
+  .wrong_container {
+    margin-bottom: 2em;
+  }
+  .wrong_container p {
+    font-size: 5vw;
+  }
+  .hint,
+  .answer {
+    width: 75vw;
+  }
+  .hint_header {
+    font-size: 6vw;
+  }
+  .res_container p {
+    font-size: 4vw;
+  }
+  .right > p:nth-of-type(1) {
+    font-size: 4.4vw;
+  }
+  .right > p:nth-of-type(2),
+  .last {
+    font-size: 4.5vw;
+  }
+}
